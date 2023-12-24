@@ -8,7 +8,21 @@
 
 <body>
 	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
+    <script>
+		//your JS code here. If required.
+function onDOMLoad() {
+        // Create a new paragraph element
+        var paragraph = document.createElement("p");
+
+        // Set the text content of the paragraph
+        paragraph.textContent = "DOM load success";
+
+        // Append the paragraph to the body
+        document.body.appendChild(paragraph);
+    }
+
+    // Add event listener for DOMContentLoaded event
+    document.addEventListener("DOMContentLoaded", onDOMLoad);
 </script>
 
 </body>
